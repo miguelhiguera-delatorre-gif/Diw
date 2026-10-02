@@ -1,0 +1,22 @@
+p {
+    color: #F4A261;
+}
+
+.parrafo_destacado {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #2A9D8F;
+}
+
+.parrafo_estandar {
+    font-size: 1.2rem;
+    color: #E9C46A;
+}
+
+h1 {
+    color: #264653;
+}
+
+h2 {
+    color: #2A9D8F;
+}
