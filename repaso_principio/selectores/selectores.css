@@ -1,20 +1,30 @@
 /* a) Selectores de tipo */
 
 /* 1.-Todos los elementos tendrán color darkred */
-*{color: darkred;}  
+*{
+    color: darkred;
+}  
 /* Con * afecta a todos los elementos */
 
 /* 2.-Todos los titulares h1 tendrán color darkblue */
-h1{color: darkblue;}
+h1{
+    color: darkblue;
+}
 
 /* 3.-Los titulares h2 y h3 tendrán color darkslateblue */
-h2, h3{color: darkslateblue;}
+h2, h3{
+    color: darkslateblue;
+}
 
 /* 4.-Todos los titulares tendrán el tipo de letra Georgia */ */
-h1,h2,h3,h4{font-family: Georgia, 'Times New Roman', Times, serif;}
+h1,h2,h3,h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}                               
 
 
 
+
+/* _______________________________________________________________________________________________________ */
 
 
 /* b) Selectores combinadores: */
@@ -65,6 +75,8 @@ section>h2+article{
 
 
 
+/* _____________________________________________________________________________________________________ */
+
 
 /* c) Selectores por atributos: */
 
@@ -90,10 +102,11 @@ img[alt$="o"]{
 
 
 img[alt*="mono"]{
-border: 10px solid blue;
+outline: 10px solid blue;
 }
 
 /* Los enlaces con destino contacto.html estarán tachados */
 a[href*="contacto.html"]{
     text-decoration: line-through;
 }
+
