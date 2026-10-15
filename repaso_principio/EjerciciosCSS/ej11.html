@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 11 - Estilos en listas</title>
+
+    <style>
+        /* Primera lista */
+        .lista-primera {
+            list-style-type: square;
+        }
+
+        /* Segunda lista */
+        .lista-segunda {
+            list-style-type: upper-roman;
+        }
+
+        /* Tercera lista */
+        .lista-tercera {
+            list-style-type: none;
+            padding: 0;
+            width: 250px;
+        }
+
+        .lista-tercera li {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+
+        /* Cambiar colores al pasar el ratón */
+        .lista-tercera li:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Icono al principio de cada enlace de la primera lista */
+        .lista-enlaces {
+            list-style-image: url("icono.png");
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Estilos en listas</h1>
+
+    <h2>Lista 1</h2>
+
+    <ul class="lista-primera">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>Lista 2</h2>
+
+    <ol class="lista-segunda">
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ol>
+
+    <h2>Lista 3</h2>
+
+    <ul class="lista-tercera">
+        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Contacto</li>
+    </ul>
+
+    <h2>Lista de enlaces con iconos</h2>
+
+    <ul class="lista-enlaces">
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+        <li><a href="https://www.youtube.com">YouTube</a></li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9 - Selectores por atributos</title>
+
+    <style>
+        /* Enlace cuyo título es Google */
+        a[title="Google"] {
+            font-size: 15px;
+            border: 1px dotted orangered;
+        }
+
+        /* Imagen cuyo texto alternativo es random image */
+        img[alt="random image"] {
+            font-size: 10px;
+            font-style: italic;
+            border: 1px dashed darkred;
+        }
+
+        /* Imagen cuyo texto alternativo es logo */
+        img[alt="logo"] {
+            font-size: 11px;
+            border: 1px dotted green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Selectores por atributos</h1>
+
+    <p>
+        <a href="https://www.google.com" title="Google">
+            Enlace a Google
+        </a>
+    </p>
+
+    <p>
+        This is just a ramdom image <img src="imagen-inexistente.jpg" alt="random image">
+    </p>
+
+    <p>
+        This is the official HTML 5 logo <img src="logo-inexistente.jpg" alt="logo">
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* Paleta de colores
+Definicion de variables */
+
+:root{
+--frozen-water: #d0fef5ff;
+--blush-pop: #fab2eaff;
+--night-bordeaux: #4a051cff;
+--tropical-mint: #52ffb8ff;
+
+}
+body{
+    background-color: gray;
+}
+h1,h2{
+    color: var(--night-bordeaux);
+    font-family: "Isometra", serif;
+}
+.parrafo_destacados{
+    color: var(--frozen-water);
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.parrafo_estandar{
+    color: var(--blush-pop);    
+}
+
+@font-face {
+    font-family: "Isometra";
+    src: url(../Isometra/Isometra-Regular.ttf);
+}

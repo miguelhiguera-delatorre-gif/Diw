@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8 - Pseudoclases en tablas</title>
+
+    <style>
+        /* Tabla */
+        table {
+            width: 60%;
+            border-collapse: collapse;
+        }
+
+        /* Celdas */
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid gray;
+        }
+
+        /* Cabecera */
+        th {
+            background-color: darkred;
+            color: white;
+        }
+
+        /* Filas pares */
+        tr:nth-child(even) {
+            background-color: gray;
+            color: white;
+        }
+
+        /* Filas impares */
+        tr:nth-child(odd) {
+            background-color: lawngreen;
+            color: black;
+        }
+
+        /* Al pasar el ratón por una fila */
+        tr:hover {
+            background-color: darkred;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tabla alumnos</h1>
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Curso</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>DAW</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>DAW</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Laura</td>
+            <td>DAW</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>DAW</td>
+            <td>7</td>
+        </tr>
+    </table>
+
+</body>
+</html>

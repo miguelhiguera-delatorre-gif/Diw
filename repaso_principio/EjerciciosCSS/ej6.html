@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6 - Pseudoselectores</title>
+
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: white;
+            color: gray;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Titulares rojos */
+        h1, h2, h3 {
+            color: red;
+        }
+
+        /* Enlaces normales */
+        a {
+            color: red;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        /* Al pasar el ratón */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Enlaces visitados */
+        a:visited {
+            color: gray;
+        }
+
+        /* Enlaces activos */
+        a:active {
+            color: blue;
+        }
+
+        /* Enlaces que reciben el foco */
+        a:focus {
+            font-size: 28px;
+            background-color: black;
+        }
+
+        /* Tabla con borde punteado */
+        .tabla-punteada {
+            border: 1px dotted black;
+        }
+
+        .tabla-punteada td,
+        .tabla-punteada th {
+            border: 1px dotted black;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ejercicio de pseudoselectores</h1>
+
+    <h2>Enlaces</h2>
+
+    <p><a href="https://www.google.com">Google</a></p>
+    <p><a href="https://www.wikipedia.org">Wikipedia</a></p>
+
+    <h2>Tabla</h2>
+
+    <table class="tabla-punteada">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+</body>
+</html>
