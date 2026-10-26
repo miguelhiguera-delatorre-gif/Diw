@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento de elementos</title>
+    <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                font-family: sans-serif;
+            }
+
+            .container{
+                border: 2px dashed black;
+                margin: 50px;
+                height: 750px;
+                width: 750px;
+                position: relative;
+            }
+
+            .element{
+                border: 2px solid black;
+                font-size: 1.2rem;
+                height: 150px;
+                width: 150px;
+                padding: 10px;
+                text-align: center;
+                line-height: 100px;
+            }
+
+
+            .first{
+                background-color: blue;
+                left: 100px;
+                top: 50px;
+
+                /* static por defecto se situan segun flujo html 
+                ignoran top, bottom, lrft , right y z.index */
+            }
+
+            .second{
+                background-color: rgb(52, 52, 255);
+                left: 250px;
+               
+
+                position: relative;
+                /* relative: activa top, bottom, left , right y z.index  */
+                /* Con relative el desplazamiento se realiza desde la caja */
+
+            }
+
+            .third{
+                background-color: rgb(98, 98, 255); 
+                left: 250px;
+                top: 0px;
+
+                position: absolute;
+                /* relative: puede usar top, bottom, left , right y z.index  */
+                /* Su posicion la ocupan otros elementos (static) ya que sale del flujo html */
+                /* Con absolute el desplazamiento se realiza desde el borde de 
+                la ventana del navegador o desde la caja si pones relative en el container*/
+
+                z-index: 10;
+            }
+
+            .fourth{
+                background-color: rgb(130, 130, 255);
+                position: fixed;
+
+                bottom: 0px;
+                right: 0px;
+                /* fixed: puede usar top, bottom, left , right y z.index  */
+                /* Fija el elementos */
+                /* sale del flujo , se disposiciona desde la ventana del navegador */
+            }
+
+            .fifth{
+                background-color: rgb(196, 196, 252);
+                position: sticky;
+                top: 10px;
+                /* sticky: puede usar top, bottom, left , right y z.index  */
+                /* Impresncindible que tenga top */
+
+            }
+
+            /* con z-index elegimos que capa se ve por encima de otra 
+            por defecto, todas tienen un z-index de 0  
+            Esto lo conseguimos dandole valor el que tenga un z-index mayor se pone por
+            */
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="element first">#static</div>
+        <div class="element second">#relative</div>
+        <div class="element third">#absolute</div>
+        <div class="element fourth">#fixed</div>
+        <div class="element fifth">#sticky</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CSS display:table</title>
+ <link rel="stylesheet" href="" type="text/css">
+
+ <style>
+   
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+    li{
+        display: inline-block;
+        margin: -2px;
+        text-decoration: none;  
+        
+    }
+
+    /* Impares */
+    li:nth-child(odd) {
+
+    padding: 10px;
+    background-color: orange;
+    
+    
+    }
+
+    /* Pares */
+    li:nth-child(even) {
+
+    padding: 10px;
+    background-color: green;
+
+    }
+
+    li a {
+    text-decoration: none;
+    }
+ </style>
+</head>
+<body>
+    <header>
+        <h2>CSS display:table</h2>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Offers</a></li>
+                <li><a href="">Catalog</a></li>
+                <li><a href="">Location</a></li>
+                <li><a href="">About</a></li>               
+            </ul>
+        </nav>
+    </header>
+  
+</body>
+</html>
