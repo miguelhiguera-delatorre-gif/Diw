@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <style>
+
+        .sombra {
+            /* rgba el ultimo es para opacidad */
+            box-shadow: 2px 2px 0.5px rgba(240, 46, 170,0.5), 
+                        5px 5px 0.5px rgba(240, 46, 170, 0.3), 
+                        8px 8px 0.5px rgba(240, 46, 170, 0.1);
+
+            width: 50px;
+            color: rgb(240, 46, 170);
+        }
+
+        /* Apartado b */
+        .caja{
+             box-shadow: 0px 0px 0px 2px rgb(85, 91, 255),
+                0px 0px 0px 4px rgb(31, 193, 27),
+                0px 0px 0px 6px rgb(255, 217, 19),
+                0px 0px 0px 8px rgb(255, 156, 85),
+                0px 0px 0px 10px rgb(255, 85, 85);
+            width: 25px;
+            height: 25px;
+            margin-top: 40px;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        /* Apartado c */
+        .cajas{
+                margin-top: 80px;
+                width: 30px;
+                height: 30px;
+                border: 2px solid blue; /* Cuadro frontal (Azul) */
+
+                box-shadow: 
+                    /*  Verde */
+                    10px -10px 0 0 #ffffff,
+                    10px -10px 0 2px #00c800,
+
+                    /*  Amarillo */
+                    20px -20px 0 0 #ffffff,
+                    20px -20px 0 2px #ffd700,
+
+                    /*  Naranja */
+                    30px -30px 0 0 #ffffff,
+                    30px -30px 0 2px #ff8c00,
+
+                    /* Rojo */
+                    40px -40px 0 0 #ffffff,
+                    40px -40px 0 2px #ff4d4d;
+               
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="sombra">
+        Hello<br>
+        world!!
+    </div>
+
+    <div class="caja">
+        
+    </div>
+
+    <div class="cajas">
+
+    </div>
+    
+
+
+</body>
+
+</html>

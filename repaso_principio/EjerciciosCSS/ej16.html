@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -16,7 +17,6 @@
 
         body{
             font-family: sans-serif;
-            width: 100%;
         }
 
         h1{
@@ -26,62 +26,84 @@
 
         /*Header y footer en linea  */
         nav div, footer div{
-            display: inline; 
+            display: inline;
         }
+
         /* Enlaces header y footer */
         nav a, footer a{
             text-decoration: none;
             color: white;
             padding: 20px;
-
         }
 
         /*Header  */
         .sticky-menu{
             text-decoration: none;
             background-color: #254848;
-            position: sticky;   
+            position: sticky;
+            top: 0px;
             padding: 20px;
             width: 100%;
+            z-index: 2;
+        }
+
+        .menu-element a:hover{
+            text-decoration: underline;
         }
 
         /* Empezamos ccon el banner */
-        .banner{
+        section{
             background-color: lightblue;
             position: relative;
-            width: 60%;
-            margin-left: 20%;
-            margin-right: 20%;
-            height: 180px;
-            top: 20px;
+            width: 75%;
+            margin: 20px auto;
+            height: 150px;
+            margin-top: 15px;
         }
 
         .logo1{
             background-color: darkolivegreen;
             position: absolute;
-            height: 100px;
-            width: 100px;
+            height: 90px;
+            width: 90px;
             z-index: 1;
-            top: 50px;
-            left: 50px;
+            top: 38px;
+            left: 38px;
         }
 
         .logo2{
             background-color: orange;
             position: absolute;
-            height: 100px;
-            width: 100px;
-             top: 30px;
-            left: 80px;
-
+            height: 90px;
+            width: 90px;
+            top: 23px;
+            left: 75px;
         }
 
+        /* Ahora el main */
 
+        main{
+            background-color: tomato;
+            width: 75%;
+            height: 375px;
+            margin: 20px auto;
+            margin-top: 15px;
+            position: relative;
+        }
 
-
-
-
-
+        .centered{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: lightgreen;
+            width: 50%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         /* Footer */
         .footer{
@@ -90,14 +112,12 @@
             width: 100%;
         }
 
-
     </style>
-
 
   </head>
 
   <body>
-    
+
     <!-- Título del sitio con desplazamiento relativo -->
 
     <h1>Título del sitio</h1>
