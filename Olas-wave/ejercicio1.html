@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(160, 48, 178);
+            margin: 0;
+            min-height: 200vh;
+        }
+
+        .centrar{
+            min-height: 100vh;
+            background-image: url("images.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            /* background-size: contain; */
+            background-color: black;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 30px;
+            font-family: 'Cinzel', serif;
+            color: white;
+            text-align: center;
+
+            position: relative;
+            padding: 20px;
+        }
+
+        .ola{
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 250px;
+        }
+
+        .ola svg{
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="centrar">
+
+        Satoru Gojo
+        <br>
+        "The chosen one"
+
+        <div class="ola">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M-0.00,50.10 C150.00,150.33 349.20,-50.10 500.00,50.10 L500.00,150.33 L-0.00,150.33 Z" 
+                style="stroke: none; fill: rgb(160, 48, 178);">
+                </path>
+            </svg>
+        </div>
+
+    </div>
+
+</body>
+</html>
