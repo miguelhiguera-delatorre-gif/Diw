@@ -33,4 +33,49 @@ article{
 
 
 /* TABLET */
+
+@media screen and (max-width: 992px){
+    article{
+        height: 150px;
+    }
+    .red{
+    background-color: red;
+    width: 50%;
+    float: left;
+    }
+
+    .blue{
+        background-color: blue;
+        width: 50%;
+        float: left;
+    }
+
+    .yellow{
+        background-color: yellow;
+        width: 100%;
+        clear: both;
+    }
+}
 /* MOVIL */
+
+@media screen and (max-width: 576px){
+  
+    .red{
+    background-color: red;
+    width: 100%;
+    float: left;
+    }
+
+    .blue{
+        background-color: blue;
+        width: 100%;
+        clear: both;
+    }
+
+    .yellow{
+        background-color: yellow;
+        width: 100%;
+        clear: both;
+    }
+
+}
